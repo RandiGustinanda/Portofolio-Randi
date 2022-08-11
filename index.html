@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fadil Resume</title>
     <link href="dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     
@@ -14,9 +17,15 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl lg:text-4xl" >Hello,<span class="block font-bold text-dark  text-2xl mt-1 lg:text-7xl">Saya Fadil</span></h1>
-                    <h2 class="mt-1 font-semibold text-dark lg:text-2xl-mt-1 lg:text-4xl ">Marketing&Sales</h2>
-                    <p class="mt-1 text-grey lg:text-2xl leading-relaxed">Saya sangat ahli dalam bidang Marketing produk dari sebuah brand dan juga bisa menjadi sales yang akan memikat sesorang untuk menggunakan produk atau membeli produk,saya sangat ahli dalam hal ini</br></br><a href="#" class="text-base font-semibold text-white bg-primary py-2 px-8 rounded-full hover:shadow-lg hover:bg-slate-600 lg:mt-10">Contatc me</a></p>
+                    <h1 class="text-base font-semibold text-primary md:text-xl lg:text-4xl" >Hello,<span class="block font-bold text-dark  text-2xl mt-1 lg:text-7xl">Saya Randi</span></h1>
+                    <h2 class="mt-1 font-semibold text-dark lg:text-2xl-mt-1 lg:text-4xl ">UX Designer</h2>
+                    <p class="mt-1 text-grey lg:text-2xl leading-relaxed"> saya memilik background  Web Development terutama saya sangat ahli dalam bidang UX Designer,kemampuan yang saya miliki termasuk profesional terbukti dengan kepemilikan sertifikat Google UX Designer </br></br></br></p>
+                    <div class="a6 a7">
+                        <a href="#" class="text-base text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80
+                        ">
+                        Contact Me
+                        </a>
+                        </div>
                  </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="relative mt-10">
@@ -32,22 +41,325 @@
         </div>
     </section>
     <!-- end hero -->
-    <!-- section start -->
-    <section id="home" class="pt-36">
-        
-    </section>
-    <!-- end start -->
+    <!-- Navbar -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 ">
+                    <a href="#home " class="font-bold text-2xl text-primary block py-7">
+                        Randi
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="nav" name="nav" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="nav-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="nav-line"></span>
+                        <span class="nav-line origin-bottom-left transition duration-300 ease-in-out"></span>
+                    </button>
+                    <nav id="menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none" >
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                            </li> 
+                            <li class="group">
+                                <a href="#hero" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Profile</a>
+                            </li>
+                            <li class='group'>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                            </li>
+                            <li class='group'>
+                                <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <!-- End Navbar -->
     <!-- about -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-ful px-4 mb-10">
-                    <h4 class="text-primary font-semibold md:text-xl lg:text-4xl ">About Me</h4>
-                    <h2></h2>
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <img src="dist/img/sertifikat.PNG" alt="randi" class="max-w-full mx-auto"/>
+                 </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10">
+                        <h1 class="t    t-base font-semibold text-primary md:text-xl lg:text-4xl" >About Me,<span class="block font-bold text-dark  text-2xl mt-1 lg:text-4xl">Better Design </br>Better Experience</span></h1>
+                    <p class="mt-1 text-grey lg:text-2xl leading-relaxed"> saya memilik background  Web Development terutama saya sangat ahli dalam bidang UX Designer,kemampuan yang saya miliki termasuk profesional terbukti dengan kepemilikan sertifikat Google UX Designer </br></br></br></p>
+                   </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end about -->
+      <!-- section start -->
+      <section id="hero" class="pt-36">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h1 class="font-bold text-2xl text-primary mb-2">My Resume</h1>
+                    <h2 class="font-semibold text-dark mb-4 text-lg">Education</h2>
+                    <p class="font-medium text-md text-grey">Berikut ini adalah sebagain Project yang telah saya buat,dan belum semuanya saya masukan kedalam website Portofolio ini</p>
+                </div>
+                <div class="ac a2q">
+<span class="
+                a1 a2 ag a3H
+                lg:a3n/2
+                as[1px] a1y a3o[#d7dfff]
+              "></span>
+<div class="a6 a1t a2h">
+<div class="a5 lg:a2i/2 ad">
+<div class="
+                    lg:aB[428px]
+                    xl:aB[490px]
+                    a5 a3I a3J
+                    sm:a3K
+                    lg:aR lg:a1e lg:a1M lg:a2b
+                    ac a2g
+                  ">
+<span class="
+                      a1 ak a3
+                      lg:a2C lg:a3L
+                      a2j
+                      a3M
+                      a1i
+                      az
+                      a3N
+                      a3f
+                    "></span>
+<h3 class="a1P a1V aI a1L">
+UI/UX Designer
+</h3>
+<p class="
+                      a1P aH a1K a28
+                    ">
+Google INC | New York
+</p>
+<span class="
+                      aL
+                      a7
+                      a1u
+                      aK
+                      ad
+                      a1i
+                      a1h
+                      a1g
+                      a3O
+                      a1P
+                      a1H 
+                    ">
+2011 - 2013
+</span>
+<p class="a1J aH a1K">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusm tempor incididunt ut labore et dolore magna
+aliqua Loremipsum dolor sit amet, consectetur adipisicing
+elit.
+</p>
+</div>
+</div>
+<div class="a5 lg:a2i/2 ad"></div>
+<div class="a5 lg:a2i/2 ad"></div>
+<div class="a5 lg:a2i/2 ad">
+<div class="
+                    lg:aB[428px]
+                    xl:aB[490px]
+                    a5 a3J
+                    sm:a3K
+                    lg:aR lg:a3P
+                    ac a2g
+                  ">
+<span class="
+                      a1 ak a3
+                      lg:a3Q
+                      a2j
+                      a3M
+                      a1i
+                      az
+                      a3N
+                      a3f
+                    "></span>
+<h3 class="a1P a1V aI a1L">
+Specialization Course
+</h3>
+<p class="
+                      a1P aH a1K a28
+                    ">
+Stanford University | New York
+</p>
+<span class="
+                      aL
+                      a7
+                      a1u
+                      aK
+                      ad
+                      a1i
+                      a1h
+                      a1g
+                      a3O
+                      a1P
+                      a1H
+                    ">
+2017 - 2018
+</span>
+<p class="a1J aH a1K">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusm tempor incididunt ut labore et dolore magna
+aliqua Loremipsum dolor sit amet, consectetur adipisicing
+elit.
+</p>
+</div>
+</div>
+<div class="a5 lg:a2i/2 ad">
+<div class="
+                    lg:aB[428px]
+                    xl:aB[490px]
+                    a5 a3I a3J
+                    sm:a3K
+                    lg:aR lg:a1e lg:a1M lg:a2b
+                    ac a2g
+                  ">
+<span class="
+                      a1 ak a3
+                      lg:a2C lg:a3L
+                      a2j
+                      a3M
+                      a1i
+                      az
+                      a3N
+                      a3f
+                    "></span>
+<h3 class="a1P a1V aI a1L">
+Web Designer
+</h3>
+<p class="
+                      a1P aH a1K a28
+                    ">
+Facebook INC | New York
+</p>
+<span class="
+                      aL
+                      a7
+                      a1u
+                      aK
+                      ad
+                      a1i
+                      a1h
+                      a1g
+                      a3O
+                      a1P
+                      a1H
+                    ">
+2014 - 2016
+</span>
+<p class="a1J aH a1K">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusm tempor incididunt ut labore et dolore magna
+aliqua Loremipsum dolor sit amet, consectetur adipisicing
+elit.
+</p>
+</div>
+</div>
+<div class="a5 lg:a2i/2 ad"></div>
+<div class="a5 lg:a2i/2 ad"></div>
+<div class="a5 lg:a2i/2 ad">
+<div class="
+                    lg:aB[428px]
+                    xl:aB[490px]
+                    a5 a3J
+                    sm:a3K
+                    lg:aR lg:a3P
+                    ac a2g
+                  ">
+<span class="
+                      a1 ak a3
+                      lg:a3Q
+                      a2j
+                      a3M
+                      a1i
+                      az
+                      a3N
+                      a3f
+                    "></span>
+<h3 class="a1P a1V aI a1L">
+Bachelor Degree
+</h3>
+<p class="
+                      a1P aH a1K a28
+                    ">
+Stanford University | New York
+</p>
+<span class="
+                      aL
+                      a7
+                      a1u
+                      aK
+                      ad
+                      a1i
+                      a1h
+                      a1g
+                      a3O
+                      a1P
+                      a1H
+                    ">
+2019 - 2021
+</span>
+<p class="a1J aH a1K">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+sed do eiusm tempor incididunt ut labore et dolore magna
+aliqua Loremipsum dolor sit amet, consectetur adipisicing
+elit.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+            </div>
+        </div> 
+    </section> 
+    <!-- end start -->
+    <!-- Portofolio -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 mt-1">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h1 class="font-bold text-2xl text-primary mb-2">Portofolio</h1>
+                    <h2 class="font-semibold text-dark mb-4 text-lg">My Project</h2>
+                    <p class="font-medium text-md text-grey">Berikut ini adalah sebagain Project yang telah saya buat,dan belum semuanya saya masukan kedalam website Portofolio ini</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2 ">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/1.png" alt="Website Portofolio" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Website Portofolio Randi</h3>
+                    <p class="font-medium text-base text-grey">Website Portofolio yang dimana proses pembuatannya dengan menggunakan framework Boostrap .</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2 ">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/2.png" alt="Website Portofolio" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Website Portofolio </h3>
+                    <p class="font-medium text-base text-grey">Merupakan Website Portofolio simple ,Website Ini Menggunakan 3 page ,yang diaman proses pembuatannya tidak begitu lama.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2 ">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/3.png" alt="Website Portofolio" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Landing Page Design</h3>
+                    <p class="font-medium text-base text-grey">Sebuah Design Landing Page music web ,yang dimana proses design menggunakan Adobe XD/p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portofolio -->
+    <!-- js -->
+   <script src="dist/js/script.js"></script>
 </body>
 </html>
